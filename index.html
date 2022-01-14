@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@600&display=swap" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet"> 
+<link rel="apple-touch-icon" sizes="57x57" href="photos/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="photos/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="photos/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="photos/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="photos/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="photos/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="photos/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="photos/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="photos/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="photos/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="photos/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="photos/favicon-16x16.png">
+<link rel="manifest" href="photos/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<link rel="manifest" href="photos/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+    <title>Adidas</title>
+ <style>   
+      .carousel .carousel-item {
+   height: 650px; 
+ 
+  background-position: left;
+}
+div#wrapper{
+    
+    /* border-style:dotted; */
+    flex-wrap: wrap;
+    padding: 5px;
+    width: 100%;
+ }
+div.col{
+    margin-top:1px;
+    position: relative;
+    font-family: 'Open Sans Condensed', sans-serif;
+   cursor:pointer;
+   transition:all 0.3s ;
+}
+div.col:hover{
+  border-style: solid;
+  border-width: 0.5px;
+  
+  transition:all 0.3s ;
+}
+ div.col img{
+
+   width: fit-content;
+  
+   
+ }
+ 
+  nav.navbar{
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+    }
+.carousel .carousel-item {
+ 
+  background-image: url('background.webp');
+  background-position: 0%;
+}
+.carousel-item img {
+   
+    height: 500px;
+    max-width: 1000px; 
+    margin-left: 18%;
+    
+} 
+     #black{
+       color:black;
+     }
+     #green{
+       color:green;
+     }
+     #red{
+       color:red;
+     }
+     #black,#green,#red
+     {
+      font-family: 'Open Sans Condensed', sans-serif;
+     }
+     h5{
+       font-weight:bold;
+       letter-spacing:1px;
+     }
+     button[data-bs-slide-to="0"]
+     {
+       color:black;
+     }
+     button[data-bs-slide-to="1"]
+     {
+       color:green;
+     }
+     button[data-bs-slide-to="2"]
+     {
+       color:red;
+     }
+     div.validate{
+       width:30%;
+       margin-left:10%;
+       margin-top:15px;
+       margin-bottom:50px;
+       
+     }
+     tr{
+       color:white;
+     }
+     tr.white{
+      color: black;
+     }
+     tr.black{
+       background-color: rgb(85, 83, 83);
+       font-family: 'Open Sans Condensed', sans-serif;
+     }
+     tr.green{
+       background-color: rgb(159, 240, 159);
+       font-family: 'Open Sans Condensed', sans-serif;
+     }
+     tr.red{
+       background-color: rgb(255, 0, 0);
+       font-family: 'Open Sans Condensed', sans-serif;
+     }
+    label.float{
+       font-size: medium;
+     }
+     table.table{
+       margin-left:30%;
+       margin-top:30px;
+       width:50%;
+     }
+     i.far{
+       position:absolute;
+       left:90%;
+       top:2%;
+     }
+     i.far:hover{
+         color:black;
+     }
+     i[pos="false"]
+     {
+       color:black;
+      position:static;
+       left:0%;
+       top:0%;
+
+     }
+     div.symbols i {
+       margin-right:5px;
+       margin-left:5px;
+     }
+     div.symbols i:hover{
+       color:black;
+       cursor:pointer;
+     }
+     div.tag{
+      position: absolute;
+      font-family: 'Bebas Neue', cursive;
+      display:inline-flex;
+      flex-direction: column;
+      top:60%;
+      font-size: x-large;
+     }
+     p.offer{
+       
+       background-color: red;
+       color:White;
+       width:fit-content;
+     }
+     p.price{
+    
+       background-color: white;
+       letter-spacing: 1px;
+       color:red;
+     
+     }
+     strong{
+       color:black;
+       letter-spacing: 1px;
+       font-weight: lighter;
+     }
+     del,p.grey{
+       color:gray;
+     }
+     ul#sort{
+         color:black;
+         margin-left:25%;         
+         
+      }
+      ul#sort li a{
+        color:black;
+        font-size: 18px;
+        letter-spacing: 2px;
+        font-family: 'PT Sans Narrow', sans-serif;
+      }
+      div.banner{
+      background-color: yellow;
+      display:flex;
+      height:100px;
+    }
+    div.banner button{
+      background-color: black;
+      color:white;
+      font-family: 'Kanit', sans-serif;
+      border: none;
+      height:50px;
+      margin-left:1%;
+      margin-top:20px;
+      width:100px;
+    }
+    div.banner button:hover{
+      background-color:white;
+      color:black;
+    }
+   
+    div.banner h1{
+      font-family: 'Kanit', sans-serif;
+      margin-left: 25%;
+      margin-top:20px;
+    }
+   
+     @media screen and (max-width: 1200px) 
+     {
+      i.far{
+        position:absolute;
+        left:350%;   
+    
+     } 
+       div#wrapper{
+         display: grid;
+        grid-template-columns: repeat(3,1fr);
+      }
+      div.tag{
+      position: absolute;
+      flex-direction: roww;
+      top:50%;
+      font-size: medium;
+       
+     }
+    div.box{
+      height:100px;
+      width:100px;
+      border-style: solid;
+      background-color: red;
+    }
+    
+     }
+     @media screen and (max-width: 900px) 
+     {
+       div#wrapper{
+         display: grid;
+        grid-template-columns: repeat(2,1fr);
+       }
+      
+     }
+     @media screen and (max-width: 700px) 
+     {
+       div#wrapper{
+         display: grid;
+        grid-template-columns: repeat(1,1fr);
+        
+       }
+       i.far
+       {
+        left: 30%;   
+       }
+     }
+     i[class="far fa-square"]
+     {
+       background-color: red;
+     }
+     form.d-flex{
+       margin-right:30px;
+     }
+     div#logo
+     {
+       position: absolute;
+       left:45%;
+     }
+     nav{
+       font-family: 'Kanit', sans-serif;
+     }
+     li.nav-item{
+       transition: all 10ms ;
+       padding:4px;
+       border-bottom-style: solid;
+       border-color:white;
+     }
+     li.nav-item:hover{
+       border-bottom-style: solid;
+       border-color: gray;
+       border-width: 1px;
+     }
+
+     nav{
+       height:70px;
+     }
+    </style>
+</head>
+<body>
+ 
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarScroll">
+            <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Men</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Women</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Children</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active"  href="#loc" >Sports</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Brands</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Collections</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active"  href="#loc" >Outlets</a>
+              </li>
+            </li>
+           
+            </ul>
+            <div class="nav-item" id="logo">
+              <img  height="50" width="70" src="photos/Adidas_Logo.svg" alt="">
+         </div>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-danger" type="submit">Search</button>
+              
+            </form>
+            <div class="symbols">
+            <i pos="false" class="far fa-user"></i>
+            <i pos="false" class="fas fa-shopping-bag"></i>
+            <i pos="false" class="far fa-heart"></i>
+          </div>
+          </div>
+       
+        </div>
+      </nav>
+      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" id="black" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" id="black" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" id="black" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div id="black" class="carousel-item active">
+            <img src="adidasBlack(1).webp"  width="200" class="d-block w-100" alt="black ">
+            <div class="carousel-caption d-none d-md-block">
+              <h5 id="black">Black Adidas</h5>
+              <p id="black">Some representative placeholder content for the first slide.</p>
+            </div>
+          </div>
+          <div id="green" class="carousel-item">
+            <img src="adidasGreen.webp" width="200" class="d-block w-100" alt="green">
+            <div class="carousel-caption d-none d-md-block">
+              <h5 id="green">Green Adidas</h5>
+              <p id="green">Some representative placeholder content for the second slide.</p>
+            </div>
+          </div>
+          <div id="red" class="carousel-item">
+            <img src="adidasRed(1).webp"  width="200" class="d-block w-100" alt="red">
+            <div class="carousel-caption d-none d-md-block">
+              <h5 id="red">Red Adidas</h5>
+              <p id="red">Some representative placeholder content for the third slide.</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+
+
+      <ul id="sort" class="nav nav-tabs">
+        <li class="nav-item">
+          <a class="nav-link active" id="eoss" aria-current="page" href="#">EOSS</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Division</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Clothing</a></li>
+            <li><a class="dropdown-item" href="#">Shoe</a></li>
+            <li><a class="dropdown-item" href="#">Accessories</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Product Type</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Sneakers</a></li>
+            <li><a class="dropdown-item" href="#">Football Boots</a></li>
+            <li><a class="dropdown-item" href="#">Slides & Flip Flops</a></li>
+            <li><a class="dropdown-item" href="#">T-Shirts</a></li>
+            <li><a class="dropdown-item" href="#">Shorts</a></li>
+            <li><a class="dropdown-item" href="#">Tights</a></li>
+            <li><a class="dropdown-item" href="#">Boots</a></li>
+            <li><a class="dropdown-item" href="#">Pants</a></li>
+          </ul>
+       </li>
+       <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Size</a>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">XXS</a></li>
+          <li><a class="dropdown-item" href="#">XS</a></li>
+          <li><a class="dropdown-item" href="#">S</a></li>
+          <li><a class="dropdown-item" href="#">M</a></li>
+          <li><a class="dropdown-item" href="#">L</a></li>
+          <li><a class="dropdown-item" href="#">XL</a></li>
+          <li><a class="dropdown-item" href="#">XXL</a></li>
+        </ul>
+     </li>
+     <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Color</a>
+      <ul class="dropdown-menu">
+           <div ><a class="dropdown-item" id="red"   class="box">Red</a></div>
+           <div ><a class="dropdown-item" id="blue"  class="box">Blue</a></div>
+           <div ><a class="dropdown-item" id="yellow"class="box">Yellow</a></div>
+           <div ><a class="dropdown-item" id="green" class="box">Black</a></div>
+           <div ><a class="dropdown-item" id="black" class="box">Multi-Color</a></div>
+           <div ><a class="dropdown-item" id="grey"  class="box">Green</a></div>
+           <div ><a class="dropdown-item" id="violet"class="box">Violet</a></div>
+          </ul>
+   </li>
+   <li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Discount</a>
+    <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">less than 10%</a></li>
+          <li><a class="dropdown-item" href="#">10-25%</a></li>
+          <li><a class="dropdown-item" href="#">25-40%</a></li>
+        
+       </ul>
+      </li>
+     <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Gender</a>
+      <ul class="dropdown-menu">
+           <li><a class="dropdown-item" href="#">Male</a></li>
+           <li><a class="dropdown-item" href="#">Female</a></li>
+           <li><a class="dropdown-item" href="#">Kids</a></li> 
+            <li><a class="dropdown-item" href="#">Unisex</a></li>
+
+      </ul>
+     </li>
+     <li class="nav-item dropdown">
+       <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Sport</a>
+       <ul class="dropdown-menu">
+         <li><a class="dropdown-item" href="#">  LifeStyle  </a></li>
+         <li><a class="dropdown-item" href="#">  Training   </a></li>
+         <li><a class="dropdown-item" href="#">  Running    </a></li>
+         <li><a class="dropdown-item" href="#">  Football   </a></li>
+         <li><a class="dropdown-item" href="#">  Tennis     </a></li>
+         <li><a class="dropdown-item" href="#">  Swim       </a></li>
+         <li><a class="dropdown-item" href="#">  Outdoor    </a></li>
+         <li><a class="dropdown-item" href="#">  Cricket         </a></li>
+         <li><a class="dropdown-item" href="#">  Yoga  </a></li>
+         <li><a class="dropdown-item" href="#">  Rugby         </a></li>
+         <li><a class="dropdown-item" href="#">  Golf              </a></li>
+         <li><a class="dropdown-item" href="#">  Hiking        </a></li>
+       </ul>
+     </li>
+       
+        
+      </ul>
+
+
+
+      <div class="container" >
+        <div class="row row-cols-4" id="wrapper">
+          <div class="col"><div class="tag"><p class="offer">40% OFF</p><p class="price"><strong>Price:</strong><del class="price">$120</del> $72</p></div><i class="far fa-heart"></i><img src="adidasBlack.webp" height="300" width="300" alt="shoe">Adidas Black Shoe <p class="grey">Men Running</p></div>
+          <div class="col"><div class="tag"><p class="offer">30% OFF</p><p class="price"><strong>Price:</strong><del class="price">$110</del> $77</p></div><i class="far fa-heart"></i><img src="photos/proxima1.webp" height="300" width="300" alt="shoe">Adidas Proxima Shoe <p class="grey">Men Fashion</p></div>
+          <div class="col"><div class="tag"><p class="offer">10% OFF</p><p class="price"><strong>Price:</strong><del class="price">$50</del> $45</p></div><i class="far fa-heart"></i><img src="photos/blue_jacket.webp" height="300" width="300" alt="shoe">Adidas Blue Jacket <p class="grey">Men Running</p></div>
+          <div class="col"><div class="tag"><p class="offer">35% OFF</p><p class="price"><strong>Price:</strong><del class="price">$159</del> $104</p></div><i class="far fa-heart"></i><img src="photos/predator-20-training-gloves.webp" height="300" width="300" alt="shoe">Predator Training Gloves <p class="grey">Training/Riding Gloves</p></div>
+          <div class="col"><div class="tag"><p class="offer">40% OFF</p><p class="price"><strong>Price:</strong><del class="price">$65</del> $39</p></div><i class="far fa-heart"></i><img src="photos/running.webp" height="300" width="300" alt="shoe">Adidas Training Shorts <p class="grey">Men Running</p></div>
+          <div class="col"><div class="tag"><p class="offer">10% OFF</p><p class="price"><strong>Price:</strong><del class="price">$40</del> $36</p></div><i class="far fa-heart"></i><img src="photos/disney-mickey-mouse-summer-set.jpg" height="300" width="300" alt="shoe">Adidas Mickey Mouse <p class="grey">Men Summer Casual</p></div>
+          <div class="col"><div class="tag"><p class="offer">50% OFF</p><p class="price"><strong>Price:</strong><del class="price">$34</del> $17</p></div><i class="far fa-heart"></i><img src="photos/the-simpsons-adilette-comfort-slides.jpg" height="300" width="300" alt="shoe">Adidas Black Chappal <p class="grey">Men Casual</p></div>
+          <div class="col"><div class="tag"><p class="offer">20% OFF</p><p class="price"><strong>Price:</strong><del class="price">$100</del> $80</p></div><i class="far fa-heart"></i><img src="photos/adicolor-classics-corded-velour-oversize-sweatshirt.jpg" height="300" width="300" alt="shoe">Adidas Black Joggers <p class="grey">Men Running/Workouts</p></div>
+          <div class="col"><div class="tag"><p class="offer">30% OFF</p><p class="price"><strong>Price:</strong><del class="price">$120</del> $84</p></div><i class="far fa-heart"></i><img src="photos/x-speedflow_006.webp" height="300" width="300" alt="shoe">Adidas x-sppedflow <p class="grey"> Men/Women Sports</p></div>
+          <div class="col"><div class="tag"><p class="offer">35% OFF</p><p class="price"><strong>Price:</strong><del class="price">$65</del> $42</p></div><i class="far fa-heart"></i><img src="photos/polo.jpg" height="300" width="300" alt="shoe">Adidas Polo Shirt <p class="grey">Men Street-Wear</p></div>
+          <div class="col"><div class="tag"><p class="offer">20% OFF</p><p class="price"><strong>Price:</strong><del class="price">$50</del> $20</p></div><i class="far fa-heart"></i><img src="photos/adicolor-classics-corded-velour-oversize-sweatshirt_013.webp" height="300" width="300" alt="shoe">Adidas Black Joggers <p class="grey">Women Running</p></div>
+          <div class="col"><div class="tag"><p class="offer">20% OFF</p><p class="price"><strong>Price:</strong><del class="price">$45</del> $36</p></div><i class="far fa-heart"></i><img src="photos/blue.webp" height="300" width="300" alt="shoe">Adidas Blue Shoe <p class="grey">Men Running</p></div>
+          <div class="col"><div class="tag"><p class="offer">20% OFF</p><p class="price"><strong>Price:</strong><del class="price">$50</del> $40</p></div><i class="far fa-heart"></i><img src="photos/asweemove-shoes_011.webp" height="300" width="300" alt="shoe">Adidas as wee move <p class="grey">Men Running</p></div>
+          <div class="col"><div class="tag"><p class="offer">20% OFF</p><p class="price"><strong>Price:</strong><del class="price">$50</del> $40</p></div><i class="far fa-heart"></i><img src="photos/predator-20-training-gloves_009.webp" height="300" width="300" alt="shoe">Predator Riding Gloves<p class="grey">Riding Gloves</p></div>
+          <div class="col"><div class="tag"><p class="offer">12% OFF</p><p class="price"><strong>Price:</strong><del class="price">$135</del> $121</p></div><i class="far fa-heart"></i><img src="photos/Terrex.webp" height="300" width="300" alt="shoe">Adidas Terrex Shoe <p class="grey">Men Style</p></div>
+          <div class="col"><div class="tag"><p class="offer">12% OFF</p><p class="price"><strong>Price:</strong><del class="price">$135</del> $121</p></div><i class="far fa-heart"></i><img src="photos/blue_racer.jpg" height="300" width="300" alt="shoe">Adidas Blue Racer<p class="grey">Men Running</p></div>
+          <div class="col"><div class="tag"><p class="offer">40% OFF</p><p class="price"><strong>Price:</strong><del class="price">$120</del> $72</p></div><i class="far fa-heart"></i><img src="photos/GreenShoe.webp" height="300" width="300" alt="shoe">Adidas Green Shoe <p class="grey">Men Running</p></div>
+          <div class="col"><div class="tag"><p class="offer">10% OFF</p><p class="price"><strong>Price:</strong><del class="price">$20</del> $18</p></div><i class="far fa-heart"></i><img src="photos/socks.webp" height="300" width="300" alt="shoe">Adidas Socks<p class="grey">Men's Wear</p></div>
+          <div class="col"><div class="tag"><p class="offer">40% OFF</p><p class="price"><strong>Price:</strong><del class="price">$120</del> $72</p></div><i class="far fa-heart"></i><img src="adidasRed.webp" height="300" width="300" alt="shoe">Adidas Red Shoe <p class="grey">Men Running</p></div>
+          <div class="col"><div class="tag"><p class="offer">15% OFF</p><p class="price"><strong>Price:</strong><del class="price">$110</del> $93</p></div><i class="far fa-heart"></i><img src="photos/adidas.webp" height="300" width="300" alt="shoe">Adidas Black Hoodie <p class="grey">Men's Fashion</p></div>
+          <div class="col"><div class="tag"><p class="offer">45% OFF</p><p class="price"><strong>Price:</strong><del class="price">$200</del> $110</p></div><i class="far fa-heart"></i><img src="photos/predator.jpg" height="300" width="300" alt="shoe">Adidas Black Vulture <p class="grey">Sports Wear</p></div>
+          <div class="col"><div class="tag"><p class="offer">40% OFF</p><p class="price"><strong>Price:</strong><del class="price">$78</del> $46</p></div><i class="far fa-heart"></i><img src="photos/white_smash.webp" height="300" width="300" alt="shoe">Adidas White Smash <p class="grey">Men's Fashion</p></div>
+          <div class="col"><div class="tag"><p class="offer">40% OFF</p><p class="price"><strong>Price:</strong><del class="price">$120</del> $72</p></div><i class="far fa-heart"></i><img src="photos/red-black.webp" height="300" width="300" alt="shoe">Adidas Red Black <p class="grey">Men's Fashion</p></div>
+          <div class="col"><div class="tag"><p class="offer">10% OFF</p><p class="price"><strong>Price:</strong><del class="price">$35</del> $31</p></div><i class="far fa-heart"></i><img src="photos/banscape.webp" height="300" width="300" alt="shoe">Adidas Black Chappal<p class="grey">Men Street Wear</p></div>
+          <div class="col"><div class="tag"><p class="offer">25% OFF</p><p class="price"><strong>Price:</strong><del class="price">$55</del> $41</p></div><i class="far fa-heart"></i><img src="photos/color_smash.webp" height="300" width="300" alt="shoe">Adidas Color Smash <p class="grey">Men's Fashion</p></div>
+          <div class="col"><div class="tag"><p class="offer">25% OFF</p><p class="price"><strong>Price:</strong><del class="price">$48</del> $36</p></div><i class="far fa-heart"></i><img src="photos/Manchester_United_Tiro_Training_Pants_Black_GR3788_21_model.jpg" height="300" width="300" alt="shoe">Adidas Manchester United <p class="grey">Men's Football</p></div>
+          <div class="col"><div class="tag"><p class="offer">40% OFF</p><p class="price"><strong>Price:</strong><del class="price">$67</del> $50</p></div><i class="far fa-heart"></i><img src="photos/black_studs.webp" height="300" width="300" alt="shoe">Adidas Black and Red Studs <p class="grey">Men's Football</p></div>
+        </div>
+      </div>
+     
+      <!-- On tables 
+      <div id="loc" class="validate">
+        <fieldset>
+      <legend>Contact Us</legend>
+      <div class="form-floating mb-3">
+        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+        <label class="float" for="floatingInput">Email address</label>
+      </div>
+      <div class="form-floating">
+        <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+        <label class="float" for="floatingPassword">Password</label>
+      </div>
+   -->
+  </fieldset>
+ </div>
+ <div class="banner">
+   <h1 >JOIN ADIDAS AND GET 15%OFF</h1>
+   <button>SIGN IN<i style="color:white;margin-left: 10px;" class="fas fa-long-arrow-alt-right"></i></button>
+   
+  
+ </div>
+
+</body>
+<script>
+    let btn=document.querySelector('button');
+    btn.addEventListener('click',showSomething);
+    function showSomething()
+    {
+        console.log("You clicked the button");
+        var para=document.createElement("p");
+        para.innerHTML='you clicked the button';
+        document.body.appendChild(para);
+    }
+</script>
+</html>
